@@ -1,5 +1,9 @@
 package estudo.consulta;
-
+/*Lambdas
+ * x -> y
+ * 
+ * Expressões Lambdas são funções anonimas/sem nome
+ */
 import java.util.ArrayList;
 import java.util.List;
 
@@ -15,7 +19,7 @@ public class Lambdas {
 		times.add("Internacional");
 		times.add("Bahia");
 		
-		//compara o tamanho das strings e coloca em ordem crescente
+		//compara o tamanho das strings e coloca em ordem crescente(de tamanho)
 		times.sort((s1, s2) -> Integer.compare(s1.length(), s2.length()));
 		//imprime cada string na tela
 		times.forEach(s -> System.out.println(s));
